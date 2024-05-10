@@ -1,4 +1,9 @@
-# CHADPI setup script/docs
+# CHADPI
+
+>> When you base your expectations only on what you see...
+>> 
+>> ...you blind yourself to the possibilities of a new reality
+>>                            *Zaheer on the evils of GUI*
 
 --- 
 
@@ -43,7 +48,7 @@ sudo apt install -y neovim
 sudo apt-get install -y ripgrep
 ```
 
-~hr
+---
 
 # references
 - https://github.com/tmux-plugins/tpm
