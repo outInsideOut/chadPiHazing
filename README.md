@@ -1,4 +1,4 @@
-# CHADPI
+# CHAD
 
 > '**When you base your expectations only on what you see...**
 > 
@@ -22,6 +22,9 @@
 ```
 sudo apt install -y zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" 
+sudo mv .zshrc .zshrc.bak
+wget https://github.com/outInsideOut/chadPiHazing/blob/main/.zshrc
+source ~/.zshrc
 ```
 
 ### languages
@@ -42,10 +45,19 @@ cd
 > [!NOTE]
 > add lua_ls to the nvim config in a bit ^^
 
-### nvim
+### nvim astrovim install
 ```
 sudo apt install -y neovim
 sudo apt-get install -y ripgrep
+git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
+rm -rf ~/.config/nvim/.git
+nvim +:q
+```
+
+### nvim setup
+```
+nvim +":MasonInstall rust-analyzer" +:q
+
 ```
 
 ---
