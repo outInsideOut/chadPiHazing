@@ -1,9 +1,10 @@
 # CHADPI
 
->> When you base your expectations only on what you see...
->> 
->> ...you blind yourself to the possibilities of a new reality
->>                            *Zaheer on the evils of GUI*
+> '**When you base your expectations only on what you see...**
+> 
+> **...you blind yourself to the possibilities of a new reality**'
+>
+>                            (*Zaheer on the evils of GUI*)
 
 --- 
 
