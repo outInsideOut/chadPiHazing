@@ -17,3 +17,5 @@ end
 
 require "lazy_setup"
 require "polish"
+
+require'lspconfig'.lua_ls.setup{}
