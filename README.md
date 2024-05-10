@@ -23,8 +23,18 @@
 sudo apt install -y zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" 
 sudo mv .zshrc .zshrc.bak
-wget https://github.com/outInsideOut/chadPiHazing/blob/main/.zshrc
+sudo curl -O https://github.com/outInsideOut/chadPiHazing/blob/main/.zshrc -o ~/.zshrc
 source ~/.zshrc
+```
+
+### tmux plugins
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+sudo curl -O https://raw.githubusercontent.com/outInsideOut/chadPiHazing/main/.tmux.conf -o ~/.tmux.conf
+source ~/.tmux.conf
+tmux send-keys C-a S-i
+sudo curl -O https://raw.githubusercontent.com/outInsideOut/chadPiHazing/main/.tmux/plugins/tmux/scripts/dracula.sh -o ~/.tmux/plugins/tmux/scripts/dracula.sh
+source ~/.tmux.conf
 ```
 
 ### languages
@@ -56,7 +66,6 @@ nvim +:q
 
 ### nvim setup
 ```
-nvim +":MasonInstall rust-analyzer" +:q
 
 ```
 
