@@ -45,7 +45,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 . "$HOME/.cargo/env"
 sudo apt install -y lua
 sudo apt-get -f install -y ninja-build
-cd /usr/bin/
+mkdir lsps
+cd lsps/
 sudo git clone https://github.com/LuaLS/lua-language-server
 cd lua-language-server
 sudo ./make.sh

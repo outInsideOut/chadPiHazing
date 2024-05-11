@@ -100,5 +100,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH=/usr/bin:/usr/bin/lua-language-server/bin:$PATH
+export PATH=/usr/bin:$HOME/lsps/bin/lua-language-server/bin:$PATH
 
