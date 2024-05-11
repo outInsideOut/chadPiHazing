@@ -22,3 +22,7 @@
 .zshenv
 frequencificatinator/
 lua-language-server/
+lsps/
+enableGit.sh[
+disableGit.sh
+.wget-hsts
