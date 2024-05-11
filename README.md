@@ -45,7 +45,7 @@ sudo apt install -y gcc
 sudo apt-get install -y g++
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh 
 . "$HOME/.cargo/env"
-sudo apt install -y lua
+sudo apt install -y lua5.4
 sudo apt-get -f install -y ninja-build
 mkdir lsps
 cd lsps/
