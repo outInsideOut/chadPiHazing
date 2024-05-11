@@ -25,7 +25,7 @@
 sudo apt install -y zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" 
 sudo mv .zshrc .zshrc.bak
-sudo curl -O https://github.com/outInsideOut/chadPiHazing/blob/main/.zshrc -o ~/.zshrc
+sudo curl -O  -o ~/.zshrc
 source ~/.zshrc
 ```
 
@@ -33,10 +33,10 @@ source ~/.zshrc
 ```
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 sudo curl -O https://raw.githubusercontent.com/outInsideOut/chadPiHazing/main/.tmux.conf -o ~/.tmux.conf
-source ~/.tmux.conf
+tmux source ~/.tmux.conf
 tmux send-keys C-a S-i
 sudo curl -O https://raw.githubusercontent.com/outInsideOut/chadPiHazing/main/.tmux/plugins/tmux/scripts/dracula.sh -o ~/.tmux/plugins/tmux/scripts/dracula.sh
-source ~/.tmux.conf
+tmux source ~/.tmux.conf
 ```
 
 ### languages
@@ -64,6 +64,8 @@ git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 nvim +:q
 nvim +':MasonInstall rust-analyzer'
+sudo mv .config/nvim/init.lua .config/nvim/init.lua.bak  
+git curl -O -https://github.com/outInsideOut/chadPiHazing/blob/main/.config/nvim/init.lua o .config/nvim/init.lua
 ```
 
 ---
