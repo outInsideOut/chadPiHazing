@@ -32,7 +32,7 @@ source ~/.zshrc
 ### tmux plugins
 ```
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-sudo curl -O https://raw.githubusercontent.com/outInsideOut/chadPiHazing/main/.tmux.conf -o ~/.tmux.conf
+sudo curl -O https://raw.githubusercontent.com/outInsideOut/chadPiHazing/main/.tmux.conf
 tmux source ~/.tmux.conf
 tmux send-keys C-a S-i
 sudo curl -O https://raw.githubusercontent.com/outInsideOut/chadPiHazing/main/.tmux/plugins/tmux/scripts/dracula.sh -o ~/.tmux/plugins/tmux/scripts/dracula.sh
