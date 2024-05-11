@@ -19,7 +19,10 @@ require "lazy_setup"
 require "polish"
 
 require'neodev'.setup({})
-require'rust-analyzer'.setup({})
+
+require("mason-lspconfig").setup {
+    ensure_installed = { "rust_analyzer" },
+}
 
 require'lspconfig'.lua_ls.setup({
   settings = {
