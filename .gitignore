@@ -23,6 +23,6 @@
 frequencificatinator/
 lua-language-server/
 lsps/
-enableGit.sh[
+enableGit.sh
 disableGit.sh
 .wget-hsts

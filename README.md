@@ -1,15 +1,17 @@
-# CHAD
+# chadπ
 
 > '**When you base your expectations only on what you see...**
 > 
 > **...you blind yourself to the possibilities of a new reality**'
-> (*Zaheer on the evils of GUI*)
+
+(*Zaheer on the evils of GUI*)
 
 --- 
 
 ## Requirements
 
-- raspberry pi 4 running a zesty fresh aarch64 Ubuntu Server flash
+- raspberry pi 4 running a zesty fresh aarch64 [Ubuntu Server](https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview) flash
+- [ssh setup on the pi](https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#3-using-advanced-options) 
 - willingness to read documentation and overcome moments of frustration
 - a dream of a dedicated dev machine with no bloat which you can access from any terminal with ssh
 - chad energy
