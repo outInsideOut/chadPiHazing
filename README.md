@@ -23,9 +23,9 @@
 ### ohmyzsh
 ```
 sudo apt install -y zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" 
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 sudo mv .zshrc .zshrc.bak
-sudo curl -O https://raw.githubusercontent.com/outInsideOut/chadPiHazing/main/.zshrc -o ~/.zshrc
+sudo curl -O https://raw.githubusercontent.com/outInsideOut/chadPiHazing/main/.zshrc
 source ~/.zshrc
 ```
 
