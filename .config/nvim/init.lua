@@ -19,6 +19,7 @@ require "lazy_setup"
 require "polish"
 
 require'neodev'.setup({})
+require'rust-analyzer'.setup({})
 
 require'lspconfig'.lua_ls.setup({
   settings = {
