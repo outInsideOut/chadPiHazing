@@ -47,27 +47,21 @@ sudo apt install -y lua
 sudo apt-get -f install -y ninja-build
 mkdir lsps
 cd lsps/
-sudo git clone https://github.com/LuaLS/lua-language-server
+git clone https://github.com/LuaLS/lua-language-server
 cd lua-language-server
-sudo ./make.sh
+./make.sh
 cd
 ```
 
-> [!NOTE]
-> add lua_ls to the nvim config in a bit ^^
-
 ### nvim astrovim install
+
 ```
 sudo apt install -y neovim
 sudo apt-get install -y ripgrep
 git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 nvim +:q
-```
-
-### nvim setup
-```
-
+nvim +':MasonInstall rust-analyzer'
 ```
 
 ---
