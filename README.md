@@ -21,9 +21,13 @@
 ## Installs
 
 ### ohmyzsh
+
 ```
 sudo apt install -y zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+```
 sudo mv .zshrc .zshrc.bak
 sudo curl -O https://raw.githubusercontent.com/outInsideOut/chadPiHazing/main/.zshrc
 source ~/.zshrc
@@ -31,15 +35,27 @@ source ~/.zshrc
 
 ### tmux plugins
 ```
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 sudo curl -O https://raw.githubusercontent.com/outInsideOut/chadPiHazing/main/.tmux.conf
-tmux source ~/.tmux.conf
-tmux send-keys C-a S-i
-sudo curl -O https://raw.githubusercontent.com/outInsideOut/chadPiHazing/main/.tmux/plugins/tmux/scripts/dracula.sh -o ~/.tmux/plugins/tmux/scripts/dracula.sh
-tmux source ~/.tmux.conf
+tmux new -d -s mySession
+tmux send-keys -t mySession.0 "tmux source ~/.tmux.conf" C-m 
+tmux send-keys -t mySession.0 Escape
+tmux run './.tmux/plugins/tpm/bin/install_plugins'
+tmux send-keys -t mySession.0 Escape
+tmux kill-server
+cd ~/.tmux/plugins/tmux/scripts/
+sudo curl -O https://raw.githubusercontent.com/outInsideOut/chadPiHazing/main/.tmux/plugins/tmux/scripts/dracula.sh
+cd
+tmux new -d -s mySession
+tmux send-keys -t mySession.0 "tmux source ~/.tmux.conf" C-m
+tmux kill-server
+tmux
 ```
 
 ### languages
+
+> [NOTE!]
+> choose default <1> when prompted
+
 ```
 sudo apt install -y gcc
 sudo apt-get install -y g++
@@ -63,9 +79,17 @@ sudo apt-get install -y ripgrep
 git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 nvim +:q
-nvim +':MasonInstall rust-analyzer'
-sudo mv .config/nvim/init.lua .config/nvim/init.lua.bak  
-git curl -O -https://github.com/outInsideOut/chadPiHazing/blob/main/.config/nvim/init.lua o .config/nvim/init.lua
+sudo mv .config/nvim/init.lua .config/nvim/init.lua.bak
+cd .config/nvim/
+curl -O https://raw.githubusercontent.com/outInsideOut/chadPiHazing/main/.config/nvim/init.lua
+cd
+nvim
+```
+
+### usefuls
+
+```
+sudo apt install -y unzip
 ```
 
 ---
