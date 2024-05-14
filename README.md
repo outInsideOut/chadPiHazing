@@ -101,3 +101,4 @@ sudo apt install -y unzip
 - https://rsdlt.github.io/posts/rust-nvim-ide-guide-walkthrough-development-debug/#set-up-rust-with-neovim
 - https://ohmyz.sh/#install
 - https://github.com/jesseduffield/lazygit 
+- https://hackersandslackers.com/running-jupyter-notebooks-on-a-ubuntu-server/
