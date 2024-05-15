@@ -102,3 +102,4 @@ sudo apt install -y unzip
 - https://ohmyz.sh/#install
 - https://github.com/jesseduffield/lazygit 
 - https://hackersandslackers.com/running-jupyter-notebooks-on-a-ubuntu-server/
+- https://ubuntu.com/server/docs/set-up-an-ftp-server
