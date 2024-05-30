@@ -15,6 +15,9 @@ There are some gotchas which I needed to work out in regards to installing neovi
 Most of these issues can be circumvented by manually building or sourcing the required modules and setting the path to find them directly.
 If you find yourself having any issues running the scripts below, please open PRs or issues with your stack-trace and we'll work it out <3
 
+> ⚠️  Due to some heavy-lifting required for an audio-processing project. This has been migrated to a WSL2 ubuntu machine.
+
+
 ---
 
 ## Requirements
@@ -69,8 +72,7 @@ tmux
 
 ### languages
 
-> [NOTE!]
-> choose default <1> when prompted
+> ⚠️ choose default <1> when prompted
 
 ```
 sudo apt install cmake
