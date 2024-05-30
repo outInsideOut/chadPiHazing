@@ -82,7 +82,10 @@ cd
 ### nvim astrovim install
 
 ```
-sudo apt install -y neovim
+cd /bin/
+sudo wget https://github.com/neovim/neovim/releases/download/v0.10.0/nvim-linux64.tar.gz
+sudo tar xzvf nvim-macos-arm64.tar.gz
+cd
 sudo apt-get install -y ripgrep
 git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
 rm -rf ~/.config/nvim/.git
