@@ -20,6 +20,13 @@
 
 ## Installs
 
+### Cleaning and upgrading
+
+```
+sudo apt-get update
+sudo apt-get upgrade
+```
+
 ### ohmyzsh
 
 ```
@@ -57,6 +64,7 @@ tmux
 > choose default <1> when prompted
 
 ```
+sudo apt install cmake
 sudo apt install -y gcc
 sudo apt-get install -y g++
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh 
