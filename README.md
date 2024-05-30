@@ -8,6 +8,15 @@
 
 --- 
 
+## Reasoning
+
+This repo exists in an attempt to have some fun doing development on a headless ubuntu server. In this case a raspberry pi, but should be usable on most ubuntu scenarios.
+There are some gotchas which I needed to work out in regards to installing neovim at a suitably late version to run astrovim, and also difficulties regarding finding a lua-language server lsp which will run on the pi's aarch64 chip. 
+Most of these issues can be circumvented by manually building or sourcing the required modules and setting the path to find them directly.
+If you find yourself having any issues running the scripts below, please open PRs or issues with your stack-trace and we'll work it out <3
+
+---
+
 ## Requirements
 
 - raspberry pi 4 running a zesty fresh aarch64 [Ubuntu Server](https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview) flash
