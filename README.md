@@ -112,6 +112,7 @@ nvim
 
 ```
 sudo apt install -y unzip
+sudo apt install xclip
 ```
 
 ---
@@ -125,3 +126,5 @@ sudo apt install -y unzip
 - https://github.com/jesseduffield/lazygit 
 - https://hackersandslackers.com/running-jupyter-notebooks-on-a-ubuntu-server/
 - https://ubuntu.com/server/docs/set-up-an-ftp-server
+- https://linuxconfig.org/how-to-use-xclip-on-linux
+- https://github.com/bcampolo/nvim-starter-kit/tree/java#neovim-starter-kit-for-java-
