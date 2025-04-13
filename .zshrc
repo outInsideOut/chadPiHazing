@@ -1,3 +1,5 @@
+if [ "$TMUX" = "" ]; then tmux; fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -8,7 +10,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="lambda"
+ZSH_THEME="cloud"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -100,5 +102,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH=/usr/bin:/usr/bin/nvim-linux64/bin/:$HOME/lsps/lua-language-server/bin:$PATH
+alias s="sudo"
+alias sapi="sudo apt install"
+alias v="nvim"
+alias sd="sudo docker"
+alias sde="sudo docker exec"
+alias suAptIn="sudo apt install"
+alias suAptRm="sudo apt remove"
+
+export PATH=/root/.local/bin:/usr/bin:/usr/bin/nvim-linux64/bin/:/home/fionnoconnor/.local/share/pipx:/home/fionnoconnor/.local/bin:$HOME/lsps/lua-language-server/bin:$PATH
 
