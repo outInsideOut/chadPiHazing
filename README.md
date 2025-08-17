@@ -54,6 +54,7 @@ source ~/.zshrc
 
 ### tmux plugins
 ```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 sudo curl -O https://raw.githubusercontent.com/outInsideOut/chadPiHazing/main/.tmux.conf
 tmux new -d -s mySession
 tmux send-keys -t mySession.0 "tmux source ~/.tmux.conf" C-m 
